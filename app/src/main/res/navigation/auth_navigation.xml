@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.myapplication.presentation.authentication.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/action_fragment_auth_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_fragment_auth_to_registerFragment"
+            app:destination="@id/inputCredentialFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.myapplication.presentation.authentication.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_home_navigation"
+            app:destination="@id/home_navigation"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inputCredentialFragment"
+        android:name="com.example.myapplication.presentation.authentication.register.input_credential.InputCredentialFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_input_credential">
+        <action
+            android:id="@+id/action_registerFragment_to_inputGenderFragment"
+            app:destination="@id/inputGenderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inputHeightFragment"
+        android:name="com.example.myapplication.presentation.authentication.register.input_height.InputHeightFragment"
+        android:label="fragment_input_height"
+        tools:layout="@layout/fragment_input_height">
+        <action
+            android:id="@+id/action_inputHeightFragment_to_inputWeightFragment"
+            app:destination="@id/inputWeightFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.myapplication.domain.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inputWeightFragment"
+        android:name="com.example.myapplication.presentation.authentication.register.input_weight.InputWeightFragment"
+        android:label="fragment_input_weight"
+        tools:layout="@layout/fragment_input_weight">
+        <action
+            android:id="@+id/action_inputWeightFragment_to_inputGoalFragment"
+            app:destination="@id/inputGoalFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.myapplication.domain.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inputGoalFragment"
+        android:name="com.example.myapplication.presentation.authentication.register.input_goal.InputGoalFragment"
+        android:label="fragment_input_goal"
+        tools:layout="@layout/fragment_input_goal">
+        <action
+            android:id="@+id/action_inputGoalFragment_to_home_navigation"
+            app:destination="@id/home_navigation"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="user"
+            app:argType="com.example.myapplication.domain.model.User" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inputGenderFragment"
+        android:name="com.example.myapplication.presentation.authentication.register.input_gender.InputGenderFragment"
+        android:label="fragment_input_gender"
+        tools:layout="@layout/fragment_input_gender">
+        <action
+            android:id="@+id/action_inputGenderFragment_to_inputHeightFragment"
+            app:destination="@id/inputHeightFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.example.myapplication.domain.model.User" />
+    </fragment>
+
+    <include app:graph="@navigation/home_navigation" />
+
+</navigation>

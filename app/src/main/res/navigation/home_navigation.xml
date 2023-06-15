@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.myapplication.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_fragment_home_to_fitnessPlanFragment"
+            app:destination="@id/fitnessPlanFragment" />
+        <action
+            android:id="@+id/action_fragment_home_to_techniqueGuideFragment"
+            app:destination="@id/techniqueGuideFragment" />
+        <action
+            android:id="@+id/action_fragment_home_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_articles"
+        android:name="com.example.myapplication.presentation.article.ArticlesFragment"
+        android:label="fragment_articles"
+        tools:layout="@layout/fragment_articles">
+        <action
+            android:id="@+id/action_fragment_articles_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.myapplication.presentation.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_fragment_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_themeFragment"
+            app:destination="@id/themeFragment" />
+        <action
+            android:id="@+id/action_fragment_profile_to_auth_navigation"
+            app:destination="@id/auth_navigation"
+            app:popUpTo="@id/fragment_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragment_profile_to_remindersFragment"
+            app:destination="@id/remindersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.myapplication.presentation.profile.edit_profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.myapplication.presentation.profile.language.LanguageSettingFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.example.myapplication.presentation.profile.reminders.RemindersSettingFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_reminders" />
+
+    <fragment
+        android:id="@+id/themeFragment"
+        android:name="com.example.myapplication.presentation.profile.theme.ThemeSettingFragment"
+        android:label="fragment_theme"
+        tools:layout="@layout/fragment_theme" />
+
+    <fragment
+        android:id="@+id/fitnessPlanFragment"
+        android:name="com.example.myapplication.presentation.fitness_plan.FitnessPlanFragment"
+        android:label="fragment_fitness_plan"
+        tools:layout="@layout/fragment_fitness_plan" />
+
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.example.myapplication.presentation.article_detail.ArticleDetailFragment"
+        android:label="fragment_article_detail"
+        tools:layout="@layout/fragment_article_detail">
+        <argument
+            android:name="article"
+            app:argType="com.example.myapplication.domain.model.Article" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/techniqueGuideFragment"
+        android:name="com.example.myapplication.presentation.technique_guide.TechniqueGuideFragment"
+        android:label="fragment_technique_guide"
+        tools:layout="@layout/fragment_technique_guide">
+        <argument
+            android:name="techniqueGuide"
+            app:argType="com.example.myapplication.data.local.entity.TechniqueGuide" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_fragment_profile"
+        app:destination="@id/fragment_profile" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.myapplication.presentation.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+
+</navigation>

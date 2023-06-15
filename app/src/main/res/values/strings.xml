@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">SehatYuk</string>
+    <string name="welcome_to_sehatyuk">Welcome\nto\nSehatYuk!</string>
+    <string name="desc">Get your body fit, strong, and healthy with our fitness training program. Your dream body is no longer a dream, make it happen.</string>
+    <string name="title_home">Home</string>
+    <string name="title_articles">Articles</string>
+    <string name="title_profile">Profile</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="back">BACK</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="your_fitness_plan">Your Fitness Plan</string>
+    <string name="technique_guides">Technique Guides</string>
+    <string name="fitness_plan_image">Fitness Plan Image</string>
+    <string name="desc_first">All exercises are personalized for you.</string>
+    <string name="desc_second">Watch some guides to give the best result.</string>
+    <string name="technique_guide_image">technique guide image</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="verryrwibawa">Verry R. Wibawa</string>
+    <string name="dummy_email">verryrwibawa@gmail.com</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="language">Language</string>
+    <string name="language_icon">language icon</string>
+    <string name="icon_arrow_right">icon_arrow_right</string>
+    <string name="theme">Theme</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="theme_icon">Theme icon</string>
+    <string name="notification_icon">Notification Icon</string>
+    <string name="workout_notification">Workout Notifications</string>
+    <string name="logout_icon">Logout Icon</string>
+    <string name="log_out">Log out</string>
+    <string name="input_error_feedback">Input error feedback</string>
+    <string name="image_auth_page">Image Auth Page</string>
+    <string name="image_fitness_plan">Image Fitness Plan</string>
+    <string name="full_name">Full Name</string>
+    <string name="next">NEXT</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_height">What\'s your height?</string>
+    <string name="input_weight">What\'s your weight?</string>
+    <string name="input_goal">Pick your goal.</string>
+    <string name="input_gender">What\'s your gender?</string>
+    <string name="your_height">Your Height (cm)</string>
+    <string name="your_weight">Your Weight (kg)</string>
+    <string name="welcome">Welcome,</string>
+    <string name="finish">FINISH</string>
+    <string name="article_image">Article Image</string>
+    <string name="lorem">Lorem ipsum dolor sit amet enqueue action arigato paciqueto.</string>
+    <string name="hi_there">Hi There!</string>
+    <string name="splash_image">splash image</string>
+    <string name="complete_for_today">COMPLETE FOR TODAY</string>
+    <string name="time">Time</string>
+    <string name="reminders">Reminders</string>
+    <string name="save">save</string>
+    <string name="notification_desc">Get work notification every workout day to stay consistent achieving your goal.</string>
+    <string name="no_notifications">No Notifications</string>
+    <string name="body_mass_index">Body Mass Index</string>
+    <string name="your_bmi">Your BMI is 0.0</string>
+
+    <string-array name="language_spinner_items">
+        <item>English</item>
+        <item>Indonesia</item>
+    </string-array>
+
+</resources>
