@@ -1,5 +1,6 @@
 package com.example.myapplication.presentation.authentication.register.input_goal
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -44,6 +45,7 @@ class InputGoalViewModel @Inject constructor(
             when (it) {
                 is Resource.Success -> {
                     saveUserSessionUseCase(user)
+                    Log.e("#inputgoal", "$user")
                     _isLoading.value = false
                     _isValid.value = true
                 }

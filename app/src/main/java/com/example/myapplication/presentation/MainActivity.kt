@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             val bottomNavMenus = listOf(
                 R.id.fragment_home,
                 R.id.fragment_articles,
+                R.id.fragment_forum,
                 R.id.fragment_profile
             )
 

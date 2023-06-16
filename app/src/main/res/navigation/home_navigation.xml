@@ -83,7 +83,11 @@
         android:id="@+id/fitnessPlanFragment"
         android:name="com.example.myapplication.presentation.fitness_plan.FitnessPlanFragment"
         android:label="fragment_fitness_plan"
-        tools:layout="@layout/fragment_fitness_plan" />
+        tools:layout="@layout/fragment_fitness_plan">
+        <action
+            android:id="@+id/action_fitnessPlanFragment_to_exerciseRecognitionFragment"
+            app:destination="@id/exerciseRecognitionFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/articleDetailFragment"
@@ -104,13 +108,23 @@
             android:name="techniqueGuide"
             app:argType="com.example.myapplication.data.local.entity.TechniqueGuide" />
     </fragment>
-    <action
-        android:id="@+id/action_global_fragment_profile"
-        app:destination="@id/fragment_profile" />
+
     <fragment
         android:id="@+id/notificationFragment"
         android:name="com.example.myapplication.presentation.notification.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/exerciseRecognitionFragment"
+        android:name="com.example.myapplication.presentation.fitness_plan.exercise_recognition.ExerciseRecognitionFragment"
+        android:label="fragment_exercise_recognition"
+        tools:layout="@layout/fragment_exercise_recognition" />
+
+    <fragment
+        android:id="@+id/fragment_forum"
+        android:name="com.example.myapplication.presentation.forum.ForumFragment"
+        android:label="fragment_forum"
+        tools:layout="@layout/fragment_forum" />
 
 </navigation>

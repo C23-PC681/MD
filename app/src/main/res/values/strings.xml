@@ -4,6 +4,7 @@
     <string name="desc">Get your body fit, strong, and healthy with our fitness training program. Your dream body is no longer a dream, make it happen.</string>
     <string name="title_home">Home</string>
     <string name="title_articles">Articles</string>
+    <string name="title_forum">Forum</string>
     <string name="title_profile">Profile</string>
     <string name="login">LOGIN</string>
     <string name="register">REGISTER</string>
@@ -56,6 +57,9 @@
     <string name="no_notifications">No Notifications</string>
     <string name="body_mass_index">Body Mass Index</string>
     <string name="your_bmi">Your BMI is 0.0</string>
+    <string name="exercise_recognition">Exercise recognition is under development</string>
+    <string name="camera_switch_button">camera switch button</string>
+    <string name="forum_is_under_development">Forum is under development</string>
 
     <string-array name="language_spinner_items">
         <item>English</item>

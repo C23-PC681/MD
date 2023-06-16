@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentFitnessPlanBinding
@@ -34,6 +35,7 @@ class FitnessPlanFragment : Fragment(), View.OnClickListener {
 
         setUpRecyclerView()
         setUpLiveDataObserver()
+        setUpActionListeners()
     }
 
     private fun setUpRecyclerView() {
@@ -55,9 +57,15 @@ class FitnessPlanFragment : Fragment(), View.OnClickListener {
         }
     }
 
+    private fun setUpActionListeners() {
+        binding.btnComplete.setOnClickListener(this)
+    }
+
     override fun onClick(v: View?) {
         when (v?.id) {
-
+            R.id.btn_complete -> {
+                findNavController().navigate(R.id.action_fitnessPlanFragment_to_exerciseRecognitionFragment)
+            }
         }
     }
 

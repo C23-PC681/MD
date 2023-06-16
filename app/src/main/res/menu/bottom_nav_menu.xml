@@ -12,6 +12,10 @@
         android:title="@string/title_articles" />
 
     <item
+        android:id="@+id/fragment_forum"
+        android:icon="@drawable/ic_forum"
+        android:title="@string/title_forum" />
+    <item
         android:id="@+id/fragment_profile"
         android:icon="@drawable/ic_profile"
         android:title="@string/title_profile" />

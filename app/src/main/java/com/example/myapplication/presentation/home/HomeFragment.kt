@@ -64,10 +64,11 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 if (it.goal == "LOSE_WEIGHT") {
                     binding.imgFitnessPlan.setImageResource(R.drawable.fitness_plan_lose_weight)
                 } else {
-                    binding.imgFitnessPlan.setImageResource(R.drawable.fitness_plan_lose_weight)
+                    binding.imgFitnessPlan.setImageResource(R.drawable.fitness_plan_gain_muscle)
                 }
                 val bmiResult = BMICalculator.calc(height = it.height!!, weight = it.weight!!)
-                binding.tvDesc3.text = "With height of ${it.height} cm and weight of ${it.weight} kg,\nYour BMI is $bmiResult"
+                binding.tvDesc3.text =
+                    "With height of ${it.height} cm and weight of ${it.weight} kg,\nYour BMI is $bmiResult"
             }
             techniqueGuides.observe(viewLifecycleOwner) {
                 val adapter = TechniqueGuideAdapter(it)

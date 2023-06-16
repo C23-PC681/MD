@@ -78,7 +78,7 @@ class InputGoalFragment : Fragment(), View.OnClickListener, RadioGroup.OnChecked
             }
 
             R.id.rdb_muscle_gain -> {
-                viewModel.onCheckedChanged(Goal.LOSE_WEIGHT)
+                viewModel.onCheckedChanged(Goal.GAIN_MUSCLE)
             }
         }
     }
